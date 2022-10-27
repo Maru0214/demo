@@ -3,6 +3,8 @@ import main from  '../img/mainvisual.jpg';
 import tyari1 from  '../img/bicycle1.jpg';
 import tyari2 from  '../img/bicycle2.jpg';
 import tyari3 from  '../img/bicycle3.jpg';
+import profile  from  '../img/logo.svg';
+import aikon  from  '../img/favicon.ico';
 
 import './App.css';
 
@@ -10,14 +12,15 @@ function App() {
   return (
     
      <body>
-   <header>
-    <nav>
+   <header >
+    <nav >
       <ul>
         <li>
-
+        
         </li>
       </ul>
     </nav>
+    <img src={profile}/>
    </header>
    <main>
      <div>
@@ -25,36 +28,42 @@ function App() {
      </div>
      <section>
       <h2>
-      Bicyce  
+     あばうと
       </h2>
       <div>
+
+      <img src={aikon}/>
         <h3>
-          aaa
+          MARU
         </h3>
         <p>
-          text
+          textてきすとてくすと
         </p>
 
  </div>
      </section>
       <h2>
-aaa
+      Bycycle
       </h2>
       <ul>
         <li>
          <h3>
-aaaa
+バイク１
          </h3>
         </li>
-         <h3>
-aaaa
-         </h3>
+        
+  <img src={tyari1}/>
+          <h3>
+          バイク2 
+           </h3>
         <li>
+<img src={tyari2}/>
         </li>
          <h3>
-aaaa
+バイク３
          </h3>
         <li>
+        <img src={tyari3}/>
 
          </li>
       </ul>
