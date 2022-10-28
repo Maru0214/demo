@@ -1,77 +1,76 @@
 
-import main from  '../img/mainvisual.jpg';
-import tyari1 from  '../img/bicycle1.jpg';
-import tyari2 from  '../img/bicycle2.jpg';
-import tyari3 from  '../img/bicycle3.jpg';
-import profile  from  '../img/logo.svg';
-import aikon  from  '../img/favicon.ico';
+import main from  '../assets/img/mainvisual.jpg';
+import tyari1 from  '../assets/img/bicycle1.jpg';
+import tyari2 from  '../assets/img/bicycle2.jpg';
+import tyari3 from  '../assets/img/bicycle3.jpg';
+import profile  from  '../assets/img/logo.svg';
+import aikon  from  '../assets/img/favicon.ico';
+import about  from  '../assets/img/about.jpg';
+
 
 import './App.css';
 
 function App() {
   return (
     
-     <body>
-   <header >
-    <nav >
-      <ul>
-        <li>
-        
-        </li>
-      </ul>
-    </nav>
-    <img src={profile}/>
-   </header>
-   <main>
-     <div>
-     <img src={main}/>
-     </div>
-     <section>
-      <h2>
-     あばうと
-      </h2>
-      <div>
+<body>
+  <header className='header' >
+      <img src={profile} className='profile'/>
 
-      <img src={aikon}/>
-        <h3>
-          MARU
-        </h3>
-        <p>
-          textてきすとてくすと
-        </p>
+          <ul className='abye'>
+            <li>
+               about         
+            </li>
+            <li>
+              bicycle         
+            </li>
+          </ul>
+      
+    
+  </header>
+  <main>
+      <div className='main'>
+        <img src={main}/>
+      </div>
+      <section  >
+        <h2 > あばうと</h2>
+          <div className='marutxt'>
+           <img src={about} className="about"/>
+           <div >
+            <h3 >MARU</h3>
+            <p >textてきすとてくすと</p>
+           </div>
+          </div>
+      </section>
+      <h2>Bycycle</h2>
 
- </div>
-     </section>
-      <h2>
-      Bycycle
-      </h2>
-      <ul>
+      <ul className='gazou'>
         <li>
-         <h3>
-バイク１
-         </h3>
+        <img src={tyari1}/>
+        <h3>バイク１</h3>
+        <p>テキスト</p>
         </li>
-        
-  <img src={tyari1}/>
-          <h3>
-          バイク2 
-           </h3>
+
         <li>
-<img src={tyari2}/>
+          <img src={tyari2}/>
+          <h3>バイク2</h3>
+          <p>テキスト</p>
         </li>
-         <h3>
-バイク３
-         </h3>
+
         <li>
         <img src={tyari3}/>
+        <h3>バイク３</h3>
+        <p>テキスト</p>
+        </li>
 
-         </li>
       </ul>
-    _<section>
 
-    </section>
+      <section>
+      </section>
    </main>
-   <footer></footer>
+   <footer>
+    <p>footer</p>
+   </footer>
       
      </body>
   
